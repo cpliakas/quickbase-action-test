@@ -12,6 +12,8 @@ jobs:
       - name: Deploy formula action step
         id: deploy
         uses: cpliakas/quickbase-action@main
+        env:
+          QUICKBASE_USER_TOKEN: ${{ secrets.QUICKBASE_USER_TOKEN }}
         with:
           realm-hostname: cpliakas.quickbase.com
           app-id: brgidnacu

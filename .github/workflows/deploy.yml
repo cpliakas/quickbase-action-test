@@ -19,7 +19,3 @@ jobs:
           QUICKBASE_USER_TOKEN: ${{ secrets.QUICKBASE_USER_TOKEN }}
         with:
           realm-hostname: cpliakas.quickbase.com
-          app-id: brgidnacu
-
-      - name: Print Quickbase CLI version action step
-        run: echo "Version ${{ steps.deploy.outputs.version }}"

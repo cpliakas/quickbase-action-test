@@ -13,7 +13,8 @@ jobs:
         id: deploy
         uses: cpliakas/quickbase-action@main
         with:
+          realm-hostname: cpliakas.quickbase.com
           app-id: brgidnacu
 
-      - name: Get Quickbase CLI version
+      - name: Print Quickbase CLI version action step
         run: echo "Version ${{ steps.deploy.outputs.version }}"

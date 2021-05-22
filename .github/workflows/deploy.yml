@@ -15,5 +15,5 @@ jobs:
         with:
           app-id: brgidnacu
 
-      - name: Get Quickbase CLI version
-        run: echo "Version: ${{ steps.deploy.outputs.version }}"
+      # - name: Get Quickbase CLI version
+      #   run: echo "Version: ${{ steps.deploy.outputs.version }}"

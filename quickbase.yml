@@ -1,0 +1,7 @@
+deploy:
+
+  formulas:
+    -
+      file: multiply.quickbase
+      table_id: brgidpsrc
+      field_id: 7

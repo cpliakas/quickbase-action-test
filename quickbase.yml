@@ -1,5 +1,12 @@
-deploy:
+test:
+  formulas:
+    -
+      file: multiply.quickbase
+      table_id: brgidpsrc
+      record_id: 1
+      expected: 4
 
+deploy:
   formulas:
     -
       file: multiply.quickbase

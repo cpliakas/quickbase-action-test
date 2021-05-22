@@ -11,7 +11,7 @@ jobs:
 
       - name: Deploy formula action step
         id: deploy
-        uses: cpliakas/quickbase-action@master
+        uses: cpliakas/quickbase-action@main
         with:
           app-id: brgidnacu
 

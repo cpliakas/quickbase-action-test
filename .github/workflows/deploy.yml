@@ -1,0 +1,19 @@
+on: [push]
+
+jobs:
+
+  deploy:
+
+    runs-on: ubuntu-latest
+    name: Deploy Quickbase formulas to an application
+
+    steps:
+
+      - name: Deploy formula action step
+        id: deploy
+        uses: cpliakas/quickbase-action@v1
+        with:
+          app-id: brgidnacu
+
+      - name: Get Quickbase CLI version
+        run: echo "Version: ${{ steps.deploy.outputs.version }}"

@@ -1,16 +1,13 @@
-name: Deploy
+name: Test
 
-on:
-  create:
-    tags:
-      - v
+on: [push, pull_request]
 
 jobs:
 
-  deploy:
+  test:
 
     runs-on: ubuntu-latest
-    name: Deploy Quickbase formulas to an application
+    name: Test Quickbase formulas
 
     steps:
 
@@ -19,7 +16,7 @@ jobs:
 
       - name: Deploy formula action step
         id: deploy
-        uses: cpliakas/quickbase-deploy-action@main
+        uses: cpliakas/quickbase-test-action@main
         env:
           QUICKBASE_USER_TOKEN: ${{ secrets.QUICKBASE_USER_TOKEN }}
         with:

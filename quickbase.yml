@@ -4,7 +4,7 @@ test:
       file: multiply.quickbase
       table_id: brgidpsrc
       record_id: 1
-      expected: 4
+      expected: 8
 
 deploy:
   formulas:

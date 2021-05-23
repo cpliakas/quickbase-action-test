@@ -14,8 +14,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy formula action step
-        id: deploy
+      - name: Test formula action step
+        id: test
         uses: cpliakas/quickbase-test-action@main
         env:
           QUICKBASE_USER_TOKEN: ${{ secrets.QUICKBASE_USER_TOKEN }}
